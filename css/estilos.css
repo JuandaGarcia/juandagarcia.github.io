@@ -1,3 +1,71 @@
-header{
-    background: pink !important;
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Varela Round', sans-serif;
+    font-weight: normal;
+    /*     font-style: italic;*/
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 1.5;
+    letter-spacing: -0.2px;
+    color: white;
+    /* text-transform: uppercase; */
+    /* text-decoration: dashed; */
+}
+
+h1 strong {
+    color:  #026fff;
+}
+
+.project-details {
+    width: 500px;
+}
+
+.project-ImageContainer {
+    width: 500px;
+}
+
+.hero {
+    height: 300px;
+    background-image: url("../images/hero.jpg");
+    background-color: #1b2127;
+    background-size: 500px 300px;
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+
+.header{
+    background-color: #1b2127;
+    color: white;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+}
+
+.project {
+/*     border-top: 10px solid red;
+    border-right: 10px solid red;
+    border-left: 10px solid red;
+    border-bottom: 10px solid red; */
+    /* border-top-color: red;
+    border-top-width: 15px;
+    border-top-style: solid;
+    border-radius: 50px; */
+    border: 1px solid gray;
+    border-radius: 10px;
+    /* border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px; */
 }
