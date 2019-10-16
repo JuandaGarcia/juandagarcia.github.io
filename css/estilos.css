@@ -1,5 +1,6 @@
 body {
     font-family: 'Open Sans', sans-serif;
+    margin: 0px;
 }
 
 h1,
@@ -18,6 +19,7 @@ h1 {
     line-height: 1.5;
     letter-spacing: -0.2px;
     color: white;
+    margin: 100px 150px 70px 30px;
     /* text-transform: uppercase; */
     /* text-decoration: dashed; */
 }
@@ -53,6 +55,10 @@ h1 strong {
     text-decoration: none;
 }
 
+.portfolio {
+    background: #fafafa;
+}
+
 .project {
 /*     border-top: 10px solid red;
     border-right: 10px solid red;
@@ -64,8 +70,33 @@ h1 strong {
     border-radius: 50px; */
     border: 1px solid gray;
     border-radius: 10px;
+    margin: 10px;
+    margin-bottom: 15px;
+    padding: 20px;
+    background: white;
+    /* margin: 10px 10px 10px 10px;  */
+    /* margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px; */
+
     /* border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px; */
+}
+
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* flex-direction: column; */
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    flex-shrink: 0;
+    border: 1px solid red;   
 }
