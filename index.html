@@ -9,6 +9,7 @@
     </head>
     <body>
         <header class="header">
+            <div class="container">
                 <figure class="logo">
                     <img src="images/blanco.png" height="50px" alt="Logo de la pagina">
                 </figure>
@@ -25,15 +26,19 @@
                     </li>
                 </ol>
             </nav>
+            </div>
         </header>
         <section class="hero">
-            <h1>
+            <div class="container">
+                 <h1>
                 Hola! Soy <strong>Juan David Garcia</strong> <br> Desarrollador ...
             </h1>
-            <!-- <img src="images/hero.jpg" width="500" height="300" alt="imagen principal"> -->
+            <img class="hero-image" src="images/hero.jpg" width="500" height="300" alt="imagen principal">
+            </div>
         </section>
         <section id="portafolio" class="portfolio">
-            <h2>Proyectos destacados</h2>
+            <div class="container">
+                <h2>Proyectos destacados</h2>
             <article class="project">
                 <div class="project-details">
                     <h3 class="project-title">Gottih Camisetas</h3>
@@ -58,9 +63,13 @@
                 <img class="project-image" src="images/proyecto1.jpg" width="500" alt="Gottih proyecto">
                 </figure>
             </article>
+            </div>
         </section>
-        <h2 class="titulo-eventos">Mas sobre mi experiencia</h2>
+        <div class="container">
+            <h2 class="titulo-eventos">Mas sobre mi experiencia</h2>
+        </div>
         <section id="eventos" class="event-list">
+            <div class="container">
             <article class="event">
                 <figure class="event-imageContainer">
                     <img class="event-image" src="images/evento.jpg" width="500">
@@ -103,18 +112,29 @@
             </article>
         </section>
         <section id="contacto" class="contact">
-            <form action="/suscripcion/" class="form-email">
-                <h3>¿Creamos algo juntos?</h3>
-                <input type="text" placeholder="Déjame tu email" id="email">
-                <button>Enviar</button>
-            </form>
+            <div class="container">
+                <form action="/suscripcion/" class="form-email">
+                    <h3>¿Creamos algo juntos?</h3>
+                    <input type="text" placeholder="Déjame tu email" id="email">
+                    <button>Enviar</button>
+                </form>
+                <div class="social">
+                    <a href="https://github.com/JuandaGarcia" class="social-link github" target="_blank"></a>
+                    <a href="https://instagram.com/JuandaGarciaa" class="social-link instagram" target="_blank"></a>
+                    <a href="https://facebook.com/JuandaGarciaDev" class="social-link facebook" target="_blank"></a>
+                    <a href="https://twitter.com/" class="social-link twitter" target="_blank"></a>
+                </div>
+            </div>
+        <!-- </div> -->
         </section>
         <footer class="footer">
-            <div>
-                <p>Portafolio Juan David Garcia Rincon <img src="images/blanco.png" height="20px" alt="Logo"></p>
-            </div>
-            <div>
-                <p>Diseñado por: <a href="https://instagram.com/JuandaGarciaa" target="_blank">@JuandaGarcia</a></p>
+            <div class="container">
+                <div>
+                    <p>Portafolio Juan David Garcia Rincon <img src="images/blanco.png" height="20px" alt="Logo"></p>
+                </div>
+                <div>
+                    <p>Diseñado por: <a href="https://instagram.com/JuandaGarciaa" target="_blank">@JuandaGarcia</a></p>
+                </div>
             </div>
         </footer>
     </body>
