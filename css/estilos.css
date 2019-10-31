@@ -30,11 +30,15 @@ h1 strong {
 }
 
 .project-details {
-    width: 500px;
+    width: 50%;
 }
 
-.project-ImageContainer {
-    width: 500px;
+.project-imageContainer {
+    width: 50%;
+}
+
+.project-imageContainer img {
+    max-width: 100%;
 }
 
 .hero {
@@ -47,6 +51,7 @@ h1 strong {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .hero-image {
@@ -60,6 +65,7 @@ h1 strong {
     height: 70px;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 
@@ -114,6 +120,8 @@ ol, ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* flex-wrap: wrap; */
+
     /* margin: 10px 10px 10px 10px;  */
     /* margin-bottom: 10px;
     margin-right: 10px;
@@ -149,6 +157,8 @@ ol, ul {
     font-family: 'Fjalla One', sans-serif;
 }
 
+
+
 h2 {
     color:  #026fff;
     text-transform: uppercase;
@@ -181,6 +191,7 @@ h2 {
     align-items: center;
     justify-content: space-between;
     padding: 0 15px;
+    flex-wrap: wrap;
 }
 
 .footer img {
@@ -198,8 +209,8 @@ h2 {
 }
 
 .event {
-    margin: 10px;
-    width: 480px;
+    margin: 1%;
+    width: 48%;
     flex-shrink: 0;
     overflow: hidden;
     border-radius: 10px;
@@ -249,10 +260,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.social {
-    
+    flex-wrap: wrap;
 }
 
 .social-link {
@@ -304,11 +312,105 @@ h2 {
 }
 
 .container {
-    width: 1000px;
+    max-width: 1000px;
+    flex: 1;
     margin: 0 auto;
     display: inherit;
     justify-content: inherit;
     align-items: inherit;
     height: inherit;
     flex-wrap: inherit;
+}
+
+/* desktop firt empezar desde el media query mas grande */
+
+@media screen and (max-width: 1024px){
+
+}
+
+@media screen and (max-width: 767px) {
+    .header {
+        display: block;
+        height: auto;
+        /* border: 10px solid green; */
+    }
+    .header ol {
+        display: block;
+    }
+
+    .header ol li {
+        height: 50px;
+    }
+
+    .header a {
+        justify-content: center;
+    }
+    
+    .header .logo {
+        text-align: center;
+    }
+
+    .project {
+        display: block;
+    }
+
+    .project-imageContainer{
+        width: auto;
+        text-align: center;
+    }
+
+    .project-details{
+        width: auto;
+        /* font-size: 16px; */
+    }
+
+    .project-tech , .project-date, .project-url{
+        margin: .3em 0;
+    }
+
+    .project-title{
+        font-size: 1.5em;
+        margin-bottom: .3em;
+    }
+
+    .project-url{
+        font-size: 1em;
+    }
+
+    .project-tech{
+        font-size: .7em;
+    }
+
+    .project-date{
+        font-size: 1em;
+    }
+
+    .project-description{
+        font-size: .8em;
+    }
+
+    .event {
+        width: auto;
+        flex-shrink: initial;
+    }
+
+    .event img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .project-details{
+        width: auto;
+        font-size: 12px;
+    }
+    
+    .event-detail {
+        margin: -2em .5em .5em;
+        padding: 1em;
+    }
+}
+
+@media screen and (max-width: 320px){
+    
 }
