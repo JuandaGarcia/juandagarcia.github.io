@@ -66,6 +66,9 @@ h1 strong {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+   /*  position: sticky;
+    top:0;
+    z-index: 3; */
 }
 
 
@@ -265,14 +268,15 @@ h2 {
 
 .social-link {
     display: inline-block;
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     margin: 0 10px;
-    background-size: 50px 50px;
+    background-size: 35px 35px;
 }
 
 .social-link.twitter {
     background-image: url('../images/twitter.png');
+    
 }
 .social-link.facebook {
     background-image: url('../images/facebook.png');
@@ -325,14 +329,38 @@ h2 {
 /* desktop firt empezar desde el media query mas grande */
 
 @media screen and (max-width: 1024px){
+    .container {
+        padding: 0 1em;
+    }
+    .hero {
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        padding: 4em;
+    }
 
+    .hero-image{
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+    }
+
+    h1{
+        font-size: 2em;
+        z-index: 2;
+    }
 }
 
 @media screen and (max-width: 767px) {
+    
     .header {
         display: block;
         height: auto;
-        /* border: 10px solid green; */
+        border: 1px solid transparent;
     }
     .header ol {
         display: block;
@@ -409,8 +437,36 @@ h2 {
         margin: -2em .5em .5em;
         padding: 1em;
     }
+    .contact{
+        height: auto;
+        padding: 1.5em 0;
+        text-align: center;
+        display: block;
+    }
+
+    .form-email button {
+        margin: 1em auto;
+    }
+
+    .form-email h3 {
+        margin-top: 0;
+    }
+
+    .footer{
+        display: block;
+        text-align: center;
+        border: 1px solid transparent;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
 }
 
 @media screen and (max-width: 320px){
-    
+    h1 {
+        font-size: 1.2em;
+    }
+    .hero {
+        padding: 2em 1em;
+    }
 }
