@@ -154,18 +154,34 @@
             </div>
         </footer>
     <script>
+        const ipad = window.matchMedia('screen and (max-width: 767px)');
         const menu = document.querySelector('.menu');
-        console.log(menu);
+        /* console.log(menu); */
         const BurgerButton = document.querySelector('#burger-menu');
-        console.log(BurgerButton);
-
+        /* console.log(BurgerButton); */
         const BotonPortafolio = document.querySelector('#Portafolio');
         const BotonExperiencia = document.querySelector('#Experiencia');
         const BotonTrabajemos = document.querySelector('#Trabajemos');
-        BurgerButton.addEventListener('click', VerMenu)
-        BotonPortafolio.addEventListener('click', VerMenu)
-        BotonExperiencia.addEventListener('click', VerMenu)
-        BotonTrabajemos.addEventListener('click', VerMenu)
+        
+        ipad.addListener(validation);
+
+        function validation(event){
+            if (event.matches){
+                BurgerButton.addEventListener('click', VerMenu)
+                BotonPortafolio.addEventListener('click', VerMenu)
+                BotonExperiencia.addEventListener('click', VerMenu)
+                BotonTrabajemos.addEventListener('click', VerMenu)
+                console.log(event.matches);
+            }else {
+                BurgerButton.removeEventListener('click', VerMenu)
+                BotonPortafolio.removeEventListener('click', VerMenu)
+                BotonExperiencia.removeEventListener('click', VerMenu)
+                BotonTrabajemos.removeEventListener('click', VerMenu)
+                console.log(event.matches);
+            }
+        }
+
+        validation(ipad);
 
         function VerMenu(){
             if(menu.classList.contains('is-active')){

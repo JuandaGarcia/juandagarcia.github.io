@@ -406,7 +406,16 @@ h2 {
 
 /* desktop firt empezar desde el media query mas grande */
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1023px){
+    
+    .event-list-title{
+        margin-left: 0;
+    }
+
+    .portfolio{
+        padding: 0px;
+    }
+
     .container {
         padding: 0 1em;
     }
@@ -434,6 +443,11 @@ h2 {
 }
 
 @media screen and (max-width: 767px) {
+
+    h2 {
+        font-size: 1.2em;
+        margin: .5em 0;
+    }
     
     .burger-button{
         display: block;
@@ -520,7 +534,7 @@ h2 {
     }
 
     .project-description{
-        font-size: .8em;
+        font-size: 1em;
     }
 
     .event {
@@ -534,9 +548,16 @@ h2 {
 }
 
 @media screen and (max-width: 480px){
+    
+    .social-link {
+        width: 40px;
+        height: 40px;
+        background-size: 40px;
+    }
+    
     .project-details{
         width: auto;
-        font-size: 12px;
+        font-size: 14px;
     }
     
     .event-detail {
